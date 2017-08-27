@@ -15,5 +15,9 @@ npm-debug.log
 yarn-error.log
 
 
+# Build
+extension/dist/
+
+
 # Default
 !.gitkeep

@@ -8,5 +8,11 @@
   "icons": {
     "48": "resources/images/mediapart.svg",
     "96": "resources/images/mediapart.svg"
+  },
+
+  "background": {
+    "scripts": [
+      "dist/indexer.js"
+    ]
   }
 }

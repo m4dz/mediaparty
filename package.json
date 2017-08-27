@@ -4,5 +4,14 @@
   "description": "A Firefox extension to link page contents to Mediapart articles",
   "repository": "https://github.com/m4dz/mediaparty.git",
   "author": "m4dz <code@m4dz.net> (https://m4dz.net)",
-  "license": "AGPL-3.0"
+  "license": "AGPL-3.0",
+  "scripts": {
+    "watch:compile": "webpack --watch --display-error-details --progress --colors",
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.5.5"
+  }
 }
