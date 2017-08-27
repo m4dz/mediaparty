@@ -1,0 +1,8 @@
+{
+  "name": "mediaparty",
+  "version": "1.0.0",
+  "description": "A Firefox extension to link page contents to Mediapart articles",
+  "repository": "https://github.com/m4dz/mediaparty.git",
+  "author": "m4dz <code@m4dz.net> (https://m4dz.net)",
+  "license": "AGPL-3.0"
+}
