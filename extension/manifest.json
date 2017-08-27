@@ -1,0 +1,12 @@
+{
+
+  "manifest_version": 2,
+  "name": "Mediaparty",
+  "version": "1.0.0",
+
+  "description": "A Firefox extension to link page contents to Mediapart articles.",
+  "icons": {
+    "48": "resources/images/mediapart.svg",
+    "96": "resources/images/mediapart.svg"
+  }
+}
