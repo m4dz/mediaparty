@@ -25,7 +25,11 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.js']
+    extensions: ['.js'],
+    modules: [
+      'node_modules',
+      path.resolve(__dirname, 'src')
+    ],
   },
 
   devtool: 'source-map'
