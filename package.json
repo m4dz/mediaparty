@@ -6,6 +6,7 @@
   "author": "m4dz <code@m4dz.net> (https://m4dz.net)",
   "license": "AGPL-3.0",
   "scripts": {
+    "test": "karma start",
     "watch:compile": "webpack --watch --display-error-details --progress --colors",
     "watch:serve": "web-ext run --source-dir extension/ --browser-console",
     "watch": "npm-run-all --parallel watch:**"
@@ -14,7 +15,18 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.2",
+    "imports-loader": "^0.7.1",
+    "karma": "^1.7.1",
+    "karma-chai": "^0.1.0",
+    "karma-chai-plugins": "^0.9.0",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-mocha": "^1.3.0",
+    "karma-webpack": "^2.0.4",
+    "mocha": "^3.5.0",
     "npm-run-all": "^4.1.0",
+    "sinon": "^3.2.1",
+    "sinon-chrome": "^2.2.1",
     "web-ext": "^2.0.0",
     "webpack": "^3.5.5"
   }
