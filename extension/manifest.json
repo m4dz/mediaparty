@@ -6,13 +6,36 @@
 
   "description": "A Firefox extension to link page contents to Mediapart articles.",
   "icons": {
-    "48": "resources/images/mediapart.svg",
-    "96": "resources/images/mediapart.svg"
+    "48": "icons/mediapart.svg",
+    "96": "icons/mediapart.svg"
   },
+
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ],
 
   "background": {
     "scripts": [
-      "dist/indexer.js"
+      "dist/indexer.js",
+      "dist/actions.js"
     ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "dist/infobox.js"
+      ]
+    }
+  ],
+
+  "page_action": {
+    "browser_style": true,
+    "default_icon": "icons/mediapart.svg",
+    "default_title": "Mediaparty 🎉"
   }
 }

@@ -2,7 +2,9 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    indexer: './src/indexer'
+    indexer: './src/indexer',
+    actions: './src/actions',
+    infobox: './src/infobox'
   },
 
   output: {
