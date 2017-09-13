@@ -56,9 +56,9 @@ export const initIndex = dict => new Promise((resolve, reject) => {
   resolve(idx)
 })
 
-browser.runtime.onStartup.addListener(() => {
+export const init = () => {
   API
     .getNodes()
     .then(dict => initIndex(dict))
     .then(idx => console.debug('search', idx))
-})
+}

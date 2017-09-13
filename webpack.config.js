@@ -2,8 +2,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    indexer: './src/indexer',
-    actions: './src/actions',
+    background: './src/background',
     infobox: './src/infobox'
   },
 

@@ -19,15 +19,18 @@ export const getCurrentTabId = () => {
     .then(tabs => tabs[0].id)
 }
 
-browser.pageAction.onClicked.addListener(tab => {
-  getCurrentTabId()
+export const bindEvents = () => {
+  browser.pageAction.onClicked.addListener(tab => {
+    getCurrentTabId()
     .then(id => browser.tabs.sendMessage(id, {action: ACTIONS.SCAN}))
-})
+  })
+}
 
+export const init = () => {
+  bindEvents()
 
-browser.runtime.onStartup.addListener(() => {
   browser.tabs
     .onActivated.addListener(active => enableAction(active.tabId))
   getCurrentTabId()
     .then(id => enableAction(id))
-  })
+}
