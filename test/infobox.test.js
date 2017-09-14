@@ -3,6 +3,8 @@
  *
  */
 
+// TODO: Test messaging system
+
 'use strict'
 
 const expect = chai.expect
@@ -11,7 +13,7 @@ describe('Infoxbox', () => {
 
   describe('Messaging', () => {
 
-    it('Responds to scan request from page action', () => {
+    it.skip('Responds to scan request from page action', () => {
 
     })
 

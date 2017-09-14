@@ -1,5 +1,8 @@
 {
   "ACTIONS": {
-    "SCAN": "SCAN"
-  }
+    "FOUND": "FOUND",
+    "SCAN": "SCAN",
+    "SEARCH": "SEARCH"
+  },
+  "ENDPOINT": "https://api.mediapart.fr/v1/main"
 }
